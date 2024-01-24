@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <unistd.h>
+	
 /**
- * main - entry point
- * description: using write to print text to standard output
- * return: always 1 (successful)
- */
-
+ * main - Entry point
+ * Description: print a quote using write function
+ *	write(int fd.const void *buf.size_t count)
+ * Return: 1 (not success)
+*/
 int main(void)
-{
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 59);
-
+{	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, quo, 59);
 	return (1);
 }
