@@ -4,7 +4,7 @@
 /**
  * main - entry point
  * description: printing random numbers with srand
- * return: 0 always(successful)
+ * Return: always 0 (success)
  */
 int main(void)
 {
