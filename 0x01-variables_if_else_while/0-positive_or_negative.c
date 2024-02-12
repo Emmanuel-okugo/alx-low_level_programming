@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** main - entry point
- * description: printing random numbers
+/**
+ * main - entry point
+ * description: printing random numbers with srand and checking if its is positive,negative or zero
  * return: always zero (successful)
  */
 int main(void)
@@ -10,7 +11,7 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
+	;
 	if (n > 0)
 		printf("%d is positive\n", n);
 	else if (n < 0)
