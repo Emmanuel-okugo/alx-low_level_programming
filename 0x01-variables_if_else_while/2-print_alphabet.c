@@ -2,13 +2,13 @@
 /**
  * main - entry point
  * description: using putchar function to print upper case alphabet
- * return: always 0(success)
+ * return: always 0 (success)
  */
 int main(void)
 {
-	char chr ='a';
+	char chr = 'a';
 
-	for (chr = 'a'; chr < 'a'; chr++)
+	for (chr = 'a'; chr < 'z'; chr++)
 	{
 		putchar(chr);
 	}
