@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
  * main - entry point
- * description: printing the alphabets in lowercase except q and e using putchar
+ * description: printing the alphabets in lowercase except q and e
  * Return: always 0 (success)
  */
 int main(void)
 {
 	char chr;
 
-	for (chr = 'a'; chr < 'z'; chr++)
+	for (chr = 'a'; chr <= 'z'; chr++)
 	{
 		if (chr != 'q' && chr != 'e')
 			putchar(chr);
@@ -17,5 +17,5 @@ int main(void)
 	}
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
