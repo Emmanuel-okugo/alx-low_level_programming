@@ -8,11 +8,16 @@
 int main(void)
 {
 	int i;
+	int count;
 
-	for (i = 0; i < 11; i++)
+	for (i = 0; i < 10; i++)
 	{
 		putchar(i + '0');
+		count += 1;
+		if (count == 10)
+			goto label_end;
 		putchar(',');
+label_end:
 		putchar(' ');
 	}
 	putchar('\n');
