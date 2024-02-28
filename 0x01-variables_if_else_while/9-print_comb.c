@@ -17,9 +17,9 @@ int main(void)
 		if (count == 10)
 			goto label_end;
 		putchar(',');
-label_end:
 		putchar(' ');
 	}
+label_end:
 	putchar('\n');
 
 	return (0);
