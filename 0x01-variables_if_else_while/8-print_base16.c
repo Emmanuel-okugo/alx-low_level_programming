@@ -5,13 +5,13 @@
  * description: printing base16 digits with putchar
  * Return: always 0 (success)
  */
-int main()
+int main(void)
 {
 
 	char str;
 
 	char chr;
-	
+
 	for (chr = '0'; chr <= '9'; chr++)
 	{
 		putchar(chr);
@@ -23,6 +23,6 @@ int main()
 	}
 
 	putchar('\n');
-	
+
 	return (0);
 }
