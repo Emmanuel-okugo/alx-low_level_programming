@@ -1,8 +1,14 @@
 #include <stdio.h>
-
+/**
+ * main - entry point
+ * descriotion: printing combination of numbers
+ * Return: always 0 (success)
+ */
 int main(void)
 {
-    int i, j;
+    int i;
+
+    int j;
 
     for (i = 0; i <= 8; i++)
     {
@@ -19,6 +25,6 @@ int main(void)
     }
     putchar('\n');
 
-    return 0;
+    return (0);
 }
 
