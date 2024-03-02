@@ -1,30 +1,24 @@
 #include <stdio.h>
-/**
- * main - entry point
- * description: learning putchar
- * Return: always 0 (success)
- */
+
 int main(void)
 {
-	int str = '0';
+    int i, j;
 
-	int i;
+    for (i = 0; i <= 8; i++)
+    {
+        for (j = i + 1; j <= 9; j++)
+        {
+            putchar((char) ('0' + i));
+            putchar((char) ('0' + j));
+            if(i != 8 || j != 9)
+            {
+                putchar(',');
+                putchar(' ');
+            }
+        }
+    }
+    putchar('\n');
 
-	int j;
+    return 0;
+}
 
-	for (i = 0; i <= 8; i++)
-	{
-		for (j = 1; j <= 9; j++)
-		{
-			putchar((char) str + i);
-			putchar((char) str + j);
-			if (i != 8 || j != 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-		return (0);
-	}
