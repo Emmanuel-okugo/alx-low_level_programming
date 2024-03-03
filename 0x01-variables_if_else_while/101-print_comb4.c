@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -12,34 +11,33 @@
 int main(void)
 {
     int i;
-    
+
     int  j;
-    
+
     int  k;
 
     /* Loop through all possible combinations */
     for (i = 0; i <= 7; i++)
     {
-        for (j = i + 1; j <= 8; j++)
-        {
-            for (k = j + 1; k <= 9; k++)
-            {
-                /* Print digits */
-                putchar('0' + i);
-                putchar('0' + j);
-                putchar('0' + k);
+	    for (j = i + 1; j <= 8; j++)
+	    {
+		    for (k = j + 1; k <= 9; k++)
+		    {
+			    /* Print digits */
+			    putchar('0' + i);
+			    putchar('0' + j);
+			    putchar('0' + k);
 
-                /* Print separator if not the last combination */
-                if (i != 7 || j != 8 || k != 9)
-                {
-                    putchar(',');
-                    putchar(' ');
-                }
-            }
-        }
+			    /* Print separator if not the last combination */
+			    if (i != 7 || j != 8 || k != 9)
+			    {
+				    putchar(',');
+				    putchar(' ');
+			    }
+		    }
+	    }
     }
     /* Print newline */
     putchar('\n');
-
     return (0);
 }
