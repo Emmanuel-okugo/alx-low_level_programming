@@ -1,45 +1,37 @@
 #include <stdio.h>
 /**
- * main - entry point
- * description: print with putchar
+ * main - -entry point
+ * description: printing with putchar
  * Return: always 0 (success)
  */
+
 int main(void)
 {
 	int i;
 
 	int j;
 
-	int k;
-
-	int l;
-
-	/* printin the required output*/
-	for (i = 0; i <= 9; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = i; j <= 8; j++)
+		for (j = i + 1; j < 100; j++)
 		{
-			for (k = 0; k <= 9; k++)
-			{
-				for (l = (k == i && j == i) ? (i + 1) : 0; l <= 9; l++)
-				{
-					putchar((char) '0' + i);
-					putchar((char) '0' + j);
-					putchar(' ');
-					putchar((char) '0' + k);
-					putchar((char) '0' + l);
+			putchar((i / 10) + '0'); /* first digit of i */
+			putchar((i % 10) + '0'); /* second digit of i */
+			putchar(' ');
+			putchar((j / 10) + '0'); /* first digit of j */
+			putchar((j % 10) + '0'); /* second digit of j */
 
-					/* condition for printing comma and space */
-					if (i != 9 || j != 8 || k != 9 || j != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+			/* condition for printing comma and space */
+			if (!(i == 98 && j == 99))
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-			putchar('\n');
 
-			return (0);
+	putchar('\n');
+
+	return (0);
 }
+
