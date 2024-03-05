@@ -17,7 +17,7 @@ int main(void)
 	/* printin the required output*/
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 8; j++)
+		for (j = i; j <= 8; j++)
 		{
 			for (k = 0; k <= 9; k++)
 			{
