@@ -21,14 +21,14 @@ int main(void)
 		{
 			for (k = 0; k <= 9; k++)
 			{
-				for (l = k + 1; l <= 9; l++)
+				for (l = 1; l <= 9; l++)
 				{
 					putchar((char) '0' + i);
 					putchar((char) '0' + j);
 					putchar(' ');
 					putchar((char) '0' + k);
 					putchar((char) '0' + l);
-					
+
 					/* condition for printing comma and space */
 					if (i != 9 || j != 8 || k != 9 || j != 9)
 					{
