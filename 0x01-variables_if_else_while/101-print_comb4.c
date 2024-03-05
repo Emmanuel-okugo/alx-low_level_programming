@@ -6,7 +6,7 @@
  * Numbers are separated by ", " and printed in ascending order
  * Only putchar function is allowed, with a maximum of six times
  *
- * Return: Always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -29,7 +29,7 @@ int main(void)
 			    putchar('0' + k);
 
 			    /* Print separator if not the last combination */
-			    if (i != 7 || j != 8 || k != 9)
+			    if (!(i == 7 && j == 8 && k == 9))
 			    {
 				    putchar(',');
 				    putchar(' ');
