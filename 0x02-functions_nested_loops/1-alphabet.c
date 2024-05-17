@@ -7,10 +7,12 @@
  * Return: always 0 (success)
  */
 
-void print_alphabet(void);
 
 int main(void)
 {
+	/* function prototype */
+	void print_alphabet(void);
+
 	/*function calling */
 	print_alphabet();
 
