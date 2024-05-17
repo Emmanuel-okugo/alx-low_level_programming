@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - entry point
@@ -10,8 +11,6 @@
 
 int main(void)
 {
-	/* function prototype */
-	void print_alphabet(void);
 
 	/*function calling */
 	print_alphabet();
