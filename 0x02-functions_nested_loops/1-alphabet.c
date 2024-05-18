@@ -11,8 +11,6 @@
 
 int main(void)
 {
-
-	/*function calling */
 	print_alphabet();
 
 	return(0);
@@ -20,14 +18,14 @@ int main(void)
 
 void print_alphabet(void)
 {
-	int i;
+	char a = 'a';
 
-	for(i = 'a'; i <= 'z'; i++)
+	while(a <= 'z')
 	{
-		putchar(i);
+		_putchar(a);
+		a++;
 	}
-
 	putchar('\n');
-
 }
+
 
