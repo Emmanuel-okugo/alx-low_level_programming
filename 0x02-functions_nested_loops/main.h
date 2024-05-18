@@ -1,5 +1,5 @@
-#ifndef PRINT
-#define PRINT
+#ifndef PRINT_H
+#define PRINT_H
 
 void print(void);
 
