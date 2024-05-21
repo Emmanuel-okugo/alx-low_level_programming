@@ -1,20 +1,11 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - entry point
  * description: program that prints
  * the alphabet in lower case
  * Return: always 0 (success)
  */
-
-
-int main(void)
-{
-	print_alphabet();
-
-	return(0);
-}
-
 void print_alphabet(void)
 {
 	char a = 'a';
