@@ -1,12 +1,18 @@
 #include <ctype.h>
 
+/**
+ * _isalpha - entry point
+ *
+ * Return: 1 (success) or 0 (failure)
+ */
+
 int _isalpha(int c)
 {
 	int checker;
 
 	checker = isalpha(c);
 
-	if(checker == 0)
+	if (checker == 0)
 	{
 		return (0);
 	}
