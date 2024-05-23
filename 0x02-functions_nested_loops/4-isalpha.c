@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - entry point
- *
+ * description: checks if c is an  alphabet
  * Return: 1 (success) or 0 (failure)
  */
 
