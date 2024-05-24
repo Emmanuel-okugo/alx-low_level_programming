@@ -2,8 +2,8 @@
 
 /**
  * _isalpha - entry point
+ * @c: carries argument to be checked
  * description: checks for  alphabet
- * @c carries argument to be checked
  * Return: 1 (success) or 0 (failure)
  */
 
