@@ -4,8 +4,6 @@
 /**
  * jack_bauer: entry point
  * description: this prints evry inutes of Jack Baeur's life
- * don't judge the simplicity of this code but if you do you
- * will figure out that i am a genius
  * Retrun: NULL
  */
 
