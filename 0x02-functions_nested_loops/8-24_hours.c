@@ -1,21 +1,11 @@
-/**
- * Wait, before you judge the simplicity of this code.
- * i know how to make it simple by using two loops, the inner counts to 59
- * while the outer loop counts to 23.
- * i wanted to make it count one at a time to give a little idea of making it
- * count like a clock at real time and giving me the idea of using multi dim
- * arrays if i wanted to.
- *
- * i know i just sounded stupid ;)
- * but that's okay :)
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * jack_bauer(void): entry point
- * description: this prints evry inutes of Jack Baeur's life 
+ * jack_bauer: entry point
+ * description: this prints evry inutes of Jack Baeur's life
+ * don't judge the simplicity of this code but if you do you
+ * will figure out that i am a genius
  * Retrun: NULL
  */
 
