@@ -1,4 +1,5 @@
-/** Wait, before you judge the simplicity of this code.
+/**
+ * Wait, before you judge the simplicity of this code.
  * i know how to make it simple by using two loops, the inner counts to 59
  * while the outer loop counts to 23.
  * i wanted to make it count one at a time to give a little idea of making it
