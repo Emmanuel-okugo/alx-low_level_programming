@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * jack_bauer: entry point
+ * jack_bauer - entry point
  * description: this prints evry inutes of Jack Baeur's life
  * Retrun: NULL
  */
