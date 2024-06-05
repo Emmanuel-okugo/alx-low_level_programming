@@ -25,12 +25,12 @@ void print_times_table(int n)
 		for (j = 0; j < n + 1; j++)
 		{
 			product = i * j;
-			
+
 			printf("%d", product);
 			if (j != n)
 			{
 				printf(",");
-				
+
 				if ((i * (j  + 1)) / 10 < 1)
 				{
 					printf("   ");
