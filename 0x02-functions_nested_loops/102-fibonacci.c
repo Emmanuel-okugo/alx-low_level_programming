@@ -2,34 +2,34 @@
 
 /**
  * main - entry point
- * description: prints the first 50 fibonacci 
+ * description: prints the first 50 fibonacci
  * numbers starting ffom 1 and 2
  * Return: always 0 (success)
  */
 
 int main(void)
 {
-	int n = 1;
+	unsigned long n = 1;
 
-	int m = 2;
+	unsigned long m = 2;
 
-	int z = 2;
+	unsigned long z = 2;
 
-	int i;
+	unsigned long i;
 
-	printf("%d, %d, ", n, m);
-	for (i = 0; i <= 50; i++)
+	printf("%lu, %lu, ", n, m);
+	for (i = 0; i < 48; i++)
 	{
 		if (i < 1)
 		{
 			n = n + m;
-			printf("%d, ", n);
+			printf("%lu, ", n);
 		}
 		else
 		{
 			n = n + z;
-			printf("%d", n);
-			if (i != 50)
+			printf("%lu", n);
+			if (i != 47)
 				printf(", ");
 
 			z = n - z;
