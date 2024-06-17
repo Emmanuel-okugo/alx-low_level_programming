@@ -15,7 +15,7 @@ int  _isdigit(int a)
 
 	if (get_return > 0)
 	{
-		return(1);
+		return (1);
 	}
 	else
 	{
