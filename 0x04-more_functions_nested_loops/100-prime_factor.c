@@ -37,5 +37,5 @@ int main(void)
 
 	printf("%ld\n", maxPrime);
 
-	return 0;
+	return (0);
 }
