@@ -4,7 +4,7 @@
 /**
  * main - entry point
  * description: fins the largest prime factor of a number
- * return: always 0 (success)
+ * Return: always 0 (success)
  */
 
 int main(void)
@@ -12,7 +12,8 @@ int main(void)
 	long number = 612852475143;
 	long maxPrime = -1;
 	long i;
-	
+
+
 	/* Divide number by 2 until it becomes odd */
 	while (number % 2 == 0)
 	{
@@ -33,8 +34,8 @@ int main(void)
     /* This condition is to check if number is a prime number greater than 2 */
 	if (number > 2)
 		maxPrime = number;
-	
+
 	printf("%ld\n", maxPrime);
-	
+
 	return 0;
 }
