@@ -1,6 +1,6 @@
 /**
  * reset_to_98.c - function entry point
- * decription: resets a variable using a pointer to it
+ * Decription: resets a variable using a pointer to it
  * @n: parameter
  *
  */
