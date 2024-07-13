@@ -1,9 +1,8 @@
 /**
- * reset_to_98.c - function entry point
- * @n: parameter
- *decription: this function takes a pointer to an integer as
- * its parameter and updates the value to 98
- *
+ *reset_to_98 - function that takes a pointer to an int as parameter
+ *and updates the value it points to to 98
+ *@n: int for checking
+ *Return: Always 0.
  */
 
 void reset_to_98(int *n)
