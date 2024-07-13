@@ -12,28 +12,34 @@
 
 void print_rev(char *s)
 {
-        char str_cpy[100];
-        int len;
-        char *start;
-        char *end;
-        char temp;
+	int len;
+	char *start;
+	char *end;
+	char temp;
+	char *str_cpy;
 
-        strcpy(str_cpy, s);
+	len = strlen(s);
 
-        len = strlen(str_cpy);
+	/* dynamically allocating memory to copy the read only char variable */
+	str_cpy = malloc(sizeof(char) * len);
+	if (str_cpy == NULL)
+	{
+		puts("memory allocation failed!!");
+	}
 
-        start = str_cpy;
-        end = str_cpy + len - 1;
+	strcpy(str_cpy, s);
 
-        while(start < end)
-        {
-                temp = *end;
-                *end = *start;
-                *start = temp;
-                start++;
-                end--;
-        }
+	start = str_cpy;
+	end = str_cpy + len - 1;
 
-        puts(str_cpy);
+	while(start < end)
+	{
+		temp = *end;
+		*end = *start;
+		*start = temp;
+		start++;
+		end--;
+	}
+
+	puts(str_cpy);
 }
-
