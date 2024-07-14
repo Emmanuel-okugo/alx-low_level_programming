@@ -32,7 +32,7 @@ void print_rev(char *s)
 	start = str_cpy;
 	end = str_cpy + len - 1;
 
-	while(start < end)
+	while (start < end)
 	{
 		temp = *end;
 		*end = *start;
