@@ -15,17 +15,15 @@ void puts_half(char *str)
 	int str_half;
 
 	stringlength = strlen(str);
-	str_half = (stringlength / 2) - 1;
+	str_half = (stringlength - 1) / 2;
 
 	for (i = 0; i < stringlength; i++)
 	{
 		if (i > str_half)
 		{
 			printf("%c", *str);
-		}
-			
-			str++;
+		}	
+		str++;
 	}
 	putchar('\n');
 }
-	
