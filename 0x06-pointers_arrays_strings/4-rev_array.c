@@ -10,7 +10,7 @@
 
 void reverse_array(int *a, int n)
 {
-	int * addressl;
+	int *addressl;
 	int count;
 	int hold_value;
 	int i;
@@ -21,7 +21,7 @@ void reverse_array(int *a, int n)
 
 
 	/* finding the address of the laast memeber of the array */
-	for (i = 0; i < 13; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (i == 12)
 		{
