@@ -23,7 +23,7 @@ void reverse_array(int *a, int n)
 	/* finding the address of the laast memeber of the array */
 	for (i = 0; i < n; i++)
 	{
-		if (i == 12)
+		if (i == n - 1)
 		{
 			addressl = fake_a;
 		}
