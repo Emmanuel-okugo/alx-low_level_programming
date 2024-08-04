@@ -5,8 +5,9 @@
 
 /**
  * string_toupper - entry point for this function
- * @str[]: array parameter
- * description: a function that converts all lowercase characters of a string to uppercase
+ * @string: pointer to array parameter
+ * description: a function that converts all lowercase
+ * characters of a string to uppercase
  * Return: pointer to the converted string
  */
 
