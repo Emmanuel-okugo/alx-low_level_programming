@@ -16,32 +16,23 @@
 
 char *leet(char *c)
 {
-	int i;
+	int i, j;
 	int stringlength = strlen(c);
+	char lowercase[5] = {'a', 'e', 'o', 't', 'l'};
+	char uppercase[5] = {'A', 'E', 'O', 'T', 'L'};
+	char numb[5] = {'4', '3', '0', '7', '1'};
 
 	/* replacing the letters */
-	for (i = 0; i < stringlength; i++)
+	for (j = 0; j < 5; j++)
 	{
-		if (c[i] == 'a' || c[i] == 'A')
+		for (i = 0; i < stringlength; i++)
 		{
-			c[i] = '4';
+			if (c[i] == uppercase[j] || c[i] == lowercase[j])
+			{
+				c[i] = numb[j];
+			}
 		}
-		if (c[i] == 'e' || c[i] == 'E')
-                {
-                        c[i] = '3';
-                }
-		if (c[i] == 'o' || c[i] == 'O')
-		{
-			c[i] = '0';
-		}
-		if (c[i] == 't' || c[i] == 'T')
-		{
-			c[i] = '7';
-		}
-		if (c[i] == 'l' || c[i] == 'L')
-		{
-			c[i] = '1';
-		}
+
 	}
 
 	return (c);

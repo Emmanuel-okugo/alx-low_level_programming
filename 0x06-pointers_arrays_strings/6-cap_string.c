@@ -3,7 +3,8 @@
 /**
  * cap_string - entry point for this code
  * @c: pointer parameter to string
- * description: a function that capitalizes the first character of each words in a string
+ * description: a function that capitalizes the first
+ * character of each words in a string
  * Return: pointer to the string
  */
 char *cap_string(char *c)
@@ -11,7 +12,7 @@ char *cap_string(char *c)
 	char uppercase = 'A', lowercase = 'a';
 	int stringlength = strlen(c);
 	int i, j, k;
-	
+
 	/* checking if the first character if the string is uppercase */
 	if (c[0] >= 97 && c[0] <= 122)
 	{
@@ -26,7 +27,7 @@ char *cap_string(char *c)
 			lowercase++;
 		}
 	}
-	
+
 	/* algorithm for converting others */
 	for (i = 1; i <= stringlength; i++)
 	{
