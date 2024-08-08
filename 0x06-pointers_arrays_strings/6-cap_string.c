@@ -31,7 +31,7 @@ char *cap_string(char *c)
 		{
 			uppercase = 'A';
 			lowercase = 'a';
-			
+
 			for (j = 0; j < 26; j++)
 			{
 				if (c[i + 1] == lowercase)
