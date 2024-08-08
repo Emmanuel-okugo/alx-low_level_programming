@@ -3,7 +3,7 @@
 
 /**
  * rot13 - entry point for this function
- * @c: string parameter 
+ * @c: string parameter
  * description: a function that encodesa string in ROT-13 encoding
  * Return: pointer to the encoded string
  */
@@ -14,7 +14,7 @@ char *rot13(char *c)
 	int stringlength1;
 	int stringlength2;
 	char letters[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char letters_b[]="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char letters_b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 
 	stringlength1 = strlen(c);
