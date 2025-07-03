@@ -20,7 +20,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	/* 
+	/*
 	 * finding the size(place value) of the number
 	 * condition: checking wether the future division is zero
 	 */
