@@ -20,8 +20,10 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	/* finding the size(place value) of the number */
-	while ((n / (size * 10) != 0) && ((size * 10) <= max_int_value)) /* checking wether the future divisor is zero */
+	/* finding the size(place value) of the number
+	 * condition: checking wether the future division is zero
+	 */
+	while ((n / (size * 10) != 0) && ((size * 10) <= max_int_value))
 	{
 		size *= 10;
 	}
@@ -41,6 +43,6 @@ void print_number(int n)
 			_putchar('0' + module);
 		}
 
-		size = size/10;
+		size = size / 10;
 	}
 }
