@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_number: entry point to this function
@@ -15,7 +15,7 @@ void print_number(int n)
 	/* printing - for negative values */
 	if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 	}
 
 	/* finding the size of the number */
@@ -32,11 +32,11 @@ void print_number(int n)
 		
 		if (module < 0)
 		{
-			putchar('0' + (-module));
+			_putchar('0' + (-module));
 		}
 		else
 		{
-			putchar('0' + module);
+			_putchar('0' + module);
 		}
 		
 		size = size/10;
