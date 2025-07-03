@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number: entry point to this function
+ * print_number - entry point to this function
  * @n: variable that contains the number
  * description: prints numbers using _putchar only
  * return: void
@@ -20,7 +20,8 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	/* finding the size(place value) of the number
+	/* 
+	 * finding the size(place value) of the number
 	 * condition: checking wether the future division is zero
 	 */
 	while ((n / (size * 10) != 0) && ((size * 10) <= max_int_value))
