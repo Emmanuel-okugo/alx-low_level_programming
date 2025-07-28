@@ -42,4 +42,6 @@ void print_rev(char *s)
 	}
 
 	puts(str_cpy);
+
+	free(str_cpy);
 }
