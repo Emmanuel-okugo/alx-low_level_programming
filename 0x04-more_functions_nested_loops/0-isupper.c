@@ -10,11 +10,7 @@
 
 int _isupper(char a)
 {
-	int is_return;
-
-	is_return = isupper(a);
-
-	if (is_return > 0)
+	if (a >= 'A' && a <= 'Z')
 	{
 		return (1);
 	}
