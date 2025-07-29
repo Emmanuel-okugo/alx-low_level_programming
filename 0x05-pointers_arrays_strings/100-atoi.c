@@ -1,8 +1,3 @@
-#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
-#include <stdlib.h>
-
 /**
  * _atoi - entry point
  * @s: parameter string to convert 
@@ -11,52 +6,35 @@
  */
 int _atoi(char *s)
 {
-	int i, j = 0, sign = 1;
-	int  strlength;
-	char newstr[100];
+	int i = 0, sign = 1, k;
+	char l;
+	int num = 0;
+	int tens = 10;
 
-	strlength = strlen(s);
-
-	/* checking if any digit is present */
-	for (i = 0; i < strlength; i++)
+	while(*(s + i) != '\0')
 	{
-		if (isdigit(s[i]) != 0)
-		{
-			break;
-		}
-		if (i == strlength - 1)      /* if no digit is found untill the end of the end of the string */
-		{
-			return (0);
-		}
-	}
-
-	/* checking for sign */
-	for (i = 0; i < strlength; i++)
-	{
-		if (s[i] == '-')
+		if (*(s + i) == '-') /* finding the sign */
 		{
 			sign = -sign;
 		}
-		if (isdigit(s[i]) != 0)
-		{
-			break;
-		}
-	}
 
-	/* finding and converting the numbers */
-	for (i = 0; i < strlength; i++)
-	{
-		if(isdigit(s[i]) != 0)
+		if (*(s + i) >= '0' && *(s + i) <= '9') /* checking if the char is a number */
 		{
-			newstr[j] = s[i];
-			j++;
-			if(s[i + 1] == ' ' || i == (strlength - 1))
+			for ( k = 0, l = '0'; l <= '9'; k++, l++)
 			{
-				newstr[j] = '\0';
-				break;
+				if (*(s + i) == l) /* checking which number it is and then updating our number */
+				{
+					num =  (num * tens) + k; 
+					break;
+				}
+			}
+
+			if (*(s + i + 1) < '0' || *(s + i + 1) > '9') /* checking if the next char is an integer */
+			{
+				return (sign * num);
 			}
 		}
+		i++;
 	}
-
-	return (sign * atoi(newstr));
+	return (0);
 }
