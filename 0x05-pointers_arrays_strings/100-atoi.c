@@ -1,6 +1,6 @@
 /**
  * _atoi - entry point
- * @s: parameter string to convert 
+ * @s: parameter string to convert
  * descrition: a function that converts a sting to an integer
  * Return: integer
  */
@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int num = 0;
 	int tens = 10;
 
-	while(*(s + i) != '\0')
+	while (*(s + i) != '\0')
 	{
 		if (*(s + i) == '-') /* finding the sign */
 		{
@@ -24,14 +24,14 @@ int _atoi(char *s)
 			{
 				if (*(s + i) == l) /* checking which number it is and then updating our number */
 				{
-					num =  (num * tens) + k; 
+					num = (num * tens) + (k * sign);
 					break;
 				}
 			}
 
 			if (*(s + i + 1) < '0' || *(s + i + 1) > '9') /* checking if the next char is an integer */
 			{
-				return (sign * num);
+				return (num);
 			}
 		}
 		i++;
