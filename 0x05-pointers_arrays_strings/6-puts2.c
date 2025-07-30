@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
+#include "main.h"
 /**
  * puts2 - entry point for this function
  * @str: type char pointer parameter
@@ -11,20 +8,16 @@
  */
 void puts2(char *str)
 {
-	int i;
-	int stringlength;
-
-	/* getting string length */
-	stringlength = strlen(str);
+	int i = 0;
 
 	/* displaying */
-	for (i = 0; i < stringlength; i++)
+	while(*(str + i) != '\0')
 	{
-		if (i == 0 || i % 2 == 0)
+		if (i % 2 == 0)
 		{
-			printf("%c", *str);
+			_putchar(*(str + i));
 		}
-		str++;
+		i++;
 	}
-	printf("\n");
+	_putchar('\n');
 }
