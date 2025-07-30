@@ -18,18 +18,18 @@ int _atoi(char *s)
 			sign = -sign;
 		}
 
-		if (*(s + i) >= '0' && *(s + i) <= '9') /* checking if the char is a number */
+		if (*(s + i) >= '0' && *(s + i) <= '9') /* if *(s + i) is a number*/
 		{
-			for ( k = 0, l = '0'; l <= '9'; k++, l++)
+			for (k = 0, l = '0'; l <= '9'; k++, l++)
 			{
-				if (*(s + i) == l) /* checking which number it is and then updating our number */
+				if (*(s + i) == l) /* finding the number then updating our number */
 				{
 					num = (num * tens) + (k * sign);
 					break;
 				}
 			}
-
-			if (*(s + i + 1) < '0' || *(s + i + 1) > '9') /* checking if the next char is an integer */
+			
+			if (*(s + i + 1) < '0' || *(s + i + 1) > '9') /* if next char is not a number */
 			{
 				return (num);
 			}
