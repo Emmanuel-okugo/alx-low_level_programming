@@ -28,8 +28,9 @@ int _atoi(char *s)
 					break;
 				}
 			}
-			
-			if (*(s + i + 1) < '0' || *(s + i + 1) > '9') /* if next char is not a number */
+
+			/* checking if the next characater is a number */
+			if (*(s + i + 1) < '0' || *(s + i + 1) > '9')
 			{
 				return (num);
 			}
