@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * puts_half - entry point for this function
  * @str: type char pointer parameter
@@ -33,10 +32,8 @@ void puts_half(char *str)
 	{
 		n = (length_of_the_string - 1) / 2;
 		i = length_of_the_string - n;
-		printf("n: %d  i: %d\n", n, i);
 		while (i < length_of_the_string)
 		{
-			printf("i: %d", i);
 			_putchar(*(str + i));
 			i++;
 		}
